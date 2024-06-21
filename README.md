@@ -35,7 +35,11 @@ selenium_env\Scripts\activate.bat
 ```
 pip install selenium==4.*
 ```
-7. Деактивировать виртуальное окружение:  
+6. Установить драйвер для браузера:  
+- для Chrome скачать нужную версию драйвера ChromeDriver можно по [ссылке](https://googlechromelabs.github.io/chrome-for-testing/);
+- создать на диске C: папку chromedriver и положите разархивированный ранее файл chromedriver.exe в папку C:\chromedriver;
+- добавить в системную переменную PATH папку C:\chromedriver ([инструкция](https://www.computerhope.com/issues/ch000549.htm)).   
+8. Деактивировать виртуальное окружение:  
 ```
 deactivate.bat
 ```
