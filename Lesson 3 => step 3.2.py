@@ -39,3 +39,6 @@ class TestLinks(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+#вывод в консоль
+FAILED (errors=1)
