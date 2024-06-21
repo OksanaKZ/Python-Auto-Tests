@@ -53,17 +53,21 @@ option1.click()
 ```
 </details>
 
----
+<details>
+<summary>Конструкция try/finally</summary>  
+Даже если в коде внутри блока try произойдет какая-то ошибка, то код внутри блока finally выполнится в любом случае.
+</details>
 
-
-> Конструкция try/finally:  
-> Даже если в коде внутри блока try произойдет какая-то ошибка, то код внутри блока finally выполнится в любом случае.
-
-
-> Атрибут text:  
+<details>
+<summary>Атрибут text</summary>  
+  
 > Возвращает текст, который находится между открывающим и закрывающим тегами элемента. Например, .text для данного элемента \<div class="message">У вас новое сообщение\</div> вернёт строку: "У вас новое сообщение".
+</details>
 
+<details>
+<summary>Функция assert</summary>  
 Для проверки ожидаемого результата используется инструкция **assert**, которая проверяет истинность утверждений: *assert True* не приводит к выводу дополнительных сообщений, а вот *assert False* вызовет исключение AssertionError. При вызове assert можно через запятую написать сообщение, которое будет выведено в случае ошибки проверки результата:
+  
 ```
 assert abs(-42) == -42, "Should be absolute value of a number"
 
@@ -73,3 +77,4 @@ Traceback (most recent call last):
 
 AssertionError: Should be absolute value of a number
 ```
+</details>
