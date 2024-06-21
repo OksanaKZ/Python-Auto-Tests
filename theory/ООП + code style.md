@@ -1,46 +1,3 @@
-<details>
-<summary>Code Style</summary>
-
-### Отступы:  
-```
-# тест вне класса: отступа нет
-def test_student_can_see_lesson_name_in_lesson_in_course_after_joining(self, driver):
-    # все строки внутри теста с отступом
-    page = CoursePromoPage(url=self.course.url, driver=driver)
-    page.open()
-
-
-class TestLessonNameInCourseForTeacher():
-    @pytest.mark.regression
-    # тест внутри класса, нужен дополнительный отступ
-    def test_teacher_can_see_lesson_name_in_lesson_in_course(self, driver):
-        # еще один отступ для каждой строки, и так с любым уровнем вложенности
-        page = LessonPlayerPage(url=self.lesson_url, driver=driver)
-        page.open()
-        try:
-            # плюс один отступ на каждый уровень вложенности
-            dangerous_function()
-        except:
-            close_something()
-```
-
-Функции пишутся через_нижнее_подчеркивание:
-```
-def test_guest_can_see_lesson_name_in_lesson_without_course(self, driver):
-```
-Классы пишут с помощью CamelCase:
-```
-class TestLessonNameWithoutCourseForGuest():
-```
-Константы пишут в стиле UPPERCASE:
-```
-MAIN_PAGE = "/catalog"
-```
-</details>
-
-<details>
-<summary>ООП</summary>
-
 ### Базовые принципы ООП  
 * Абстракция — отделение концепции от ее экземпляра;
 * Полиморфизм — реализация задач одной и той же идеи разными способами;
@@ -56,8 +13,7 @@ MAIN_PAGE = "/catalog"
 ### Используйте следующее вместе с наследованием
 * Делегация — перепоручение задачи от внешнего объекта внутреннему;
 * Композиция — включение объектом-контейнером объекта-содержимого и управление его поведением; последний не может существовать вне первого;
-* Агрегация — включение объектом-контейнером ссылки на объект-содержимое; при уничтожении первого последний продолжает существование.
-</details>
+* Агрегация — включение объектом-контейнером ссылки на объект-содержимое; при уничтожении первого последний продолжает существование.  
 
 <details>
 <summary>Принципы для разработки</summary>
@@ -130,4 +86,43 @@ D) Dependency inversion principle / Принцип инверсии зависи
 
 7. Бритва Оккама  
 Бри́тва О́ккама (иногда ле́звие О́ккама) — методологический принцип, в кратком виде гласящий: «Не следует множить сущее без необходимости» (либо «Не следует привлекать новые сущности без крайней на то необходимости»). Не создавайте ненужных сущностей без необходимости. Будьте прагматичны — подумайте, нужны ли они, поскольку они могут в конечном итоге усложнить вашу кодовую базу.
+</details>
+<details>
+<summary>Code Style</summary>
+
+### Отступы:  
+```
+# тест вне класса: отступа нет
+def test_student_can_see_lesson_name_in_lesson_in_course_after_joining(self, driver):
+    # все строки внутри теста с отступом
+    page = CoursePromoPage(url=self.course.url, driver=driver)
+    page.open()
+
+
+class TestLessonNameInCourseForTeacher():
+    @pytest.mark.regression
+    # тест внутри класса, нужен дополнительный отступ
+    def test_teacher_can_see_lesson_name_in_lesson_in_course(self, driver):
+        # еще один отступ для каждой строки, и так с любым уровнем вложенности
+        page = LessonPlayerPage(url=self.lesson_url, driver=driver)
+        page.open()
+        try:
+            # плюс один отступ на каждый уровень вложенности
+            dangerous_function()
+        except:
+            close_something()
+```
+
+Функции пишутся через_нижнее_подчеркивание:
+```
+def test_guest_can_see_lesson_name_in_lesson_without_course(self, driver):
+```
+Классы пишут с помощью CamelCase:
+```
+class TestLessonNameWithoutCourseForGuest():
+```
+Константы пишут в стиле UPPERCASE:
+```
+MAIN_PAGE = "/catalog"
+```
 </details>
