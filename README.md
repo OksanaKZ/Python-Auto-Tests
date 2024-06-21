@@ -17,9 +17,16 @@ Selenium WebDriver, или просто WebDriver – это драйвер бр
 
 ---
 <details>
-<summary>Запускаем браузер с помощью Selenium WebDriver</summary>
-  
-Активировать виртуальное окружение:  
+<summary>Инструкция для запуска браузера с помощью Selenium WebDriver</summary>
+
+1. Установить Python3 (официальный сайт https://www.python.org/downloads/). Во время установки убедитесь в том, что вы поставили галочку в разделе Add Python 3.x to PATH. В этом случае вызов интерпретатора Python будет доступен вам из командной строки.
+2. Создать виртуальное окружение (легко удалить или изменить). Все пакеты для Python, которые будут установлены позднее, будут доступны только в этом виртуальном окружении:
+```
+mkdir environments
+cd environments
+python -m venv selenium_env
+```
+3. Активировать виртуальное окружение:  
 ```
 selenium_env\Scripts\activate.bat
 ```
