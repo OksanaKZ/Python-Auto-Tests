@@ -42,6 +42,10 @@ pip install pytest==7.1.2
 ```
 pip freeze > requirements.txt
 ```
+Чтобы добавить все пакеты из файла в новом виртуальном окружении, ввести команду:  
+```
+pip install -r requirements.txt
+```
 7. Установить драйвер для браузера:  
 - для Chrome скачать нужную версию драйвера ChromeDriver можно по [ссылке](https://googlechromelabs.github.io/chrome-for-testing/);
 - создать на диске C: папку chromedriver и положите разархивированный ранее файл chromedriver.exe в папку C:\chromedriver;
