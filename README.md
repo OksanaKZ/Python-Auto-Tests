@@ -35,7 +35,11 @@ selenium_env\Scripts\activate.bat
 ```
 pip install selenium==4.*
 ```
-6. Установить драйвер для браузера:  
+6. В виртуальном окружении установить PyTest:
+```
+pip install pytest==7.1.2
+```
+7. Установить драйвер для браузера:  
 - для Chrome скачать нужную версию драйвера ChromeDriver можно по [ссылке](https://googlechromelabs.github.io/chrome-for-testing/);
 - создать на диске C: папку chromedriver и положите разархивированный ранее файл chromedriver.exe в папку C:\chromedriver;
 - добавить в системную переменную PATH папку C:\chromedriver ([инструкция](https://www.computerhope.com/issues/ch000549.htm)).   
