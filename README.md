@@ -30,20 +30,24 @@ python -m venv selenium_env
 ```
 selenium_env\Scripts\activate.bat
 ```
-4. Для запуска интерпретатора Python ввести команду python.
-5. В виртуальном окружении установить библиотеку Selenium:
+4. В виртуальном окружении установить библиотеку Selenium:
 ```
 pip install selenium==4.*
 ```
-6. В виртуальном окружении установить PyTest:
+5. В виртуальном окружении установить PyTest:
 ```
 pip install pytest==7.1.2
+```
+6. Cохранить все версии пакетов в специальный файл requirements.txt:
+```
+pip freeze > requirements.txt
 ```
 7. Установить драйвер для браузера:  
 - для Chrome скачать нужную версию драйвера ChromeDriver можно по [ссылке](https://googlechromelabs.github.io/chrome-for-testing/);
 - создать на диске C: папку chromedriver и положите разархивированный ранее файл chromedriver.exe в папку C:\chromedriver;
-- добавить в системную переменную PATH папку C:\chromedriver ([инструкция](https://www.computerhope.com/issues/ch000549.htm)).   
-8. Деактивировать виртуальное окружение:  
+- добавить в системную переменную PATH папку C:\chromedriver ([инструкция](https://www.computerhope.com/issues/ch000549.htm)).  
+8. Для запуска интерпретатора Python ввести команду python.  
+9. Деактивировать виртуальное окружение:  
 ```
 deactivate.bat
 ```
