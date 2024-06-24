@@ -56,3 +56,12 @@ pip install -r requirements.txt
 deactivate.bat
 ```
 </details>
+
+---
+
+<details>
+<summary>Полезные ссылки</summary>
+
+Игра для изучения CSS "CSS Diner - Where we feast on CSS Selectors!" => https://flukeout.github.io/
+
+</details>
