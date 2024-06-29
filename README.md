@@ -13,6 +13,8 @@ Selenium WebDriver, или просто WebDriver – это драйвер бр
 
 Исходя из этого определения, ясно, что WebDriver не имеет прямого отношения к тестированию. Он всего лишь предоставляет автотестам доступ к браузеру. На этом его функции заканчиваются.  
 
+<img src="https://github.com/OksanaKZ/Python-Auto-Tests/blob/main/images/Selenium%20WebDriver.png"/>
+
 Структурирование, группировку и запуск тестов, а также генерацию отчётов о тестировании, обеспечивает фреймворк тестирования, такой как JUnit или TestNG для Java, NUnit или Gallio для .Net, RSpec или Cucumber для Ruby и так далее. Разработка тестов ведётся в среде Eclipse, Intellij IDEA, Visual Studio, RubyMine и так далее. Сборка осуществляется посредством Maven, Gradle, Ant, NAnt,Rake и так далее. Запуск тестов по расписанию и публикацию отчётов выполняет сервер непрерывной интеграции – Jenkins, CruiseControl, Bamboo, TeamCity и так далее. И всё это – самостоятельные инструменты, не имеющие отношения к проекту Selenium.  
 
 ---
